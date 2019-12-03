@@ -5,17 +5,13 @@ class Shoe
   BRANDS = []
   def initialize(brand)
     @brand = brand
-    BRANDS << brand
-  end
-  
-  def unique_b=(brand)
-    @brand = brand
-
     brand.each do |b|
     !BRANDS.include?(b)
     BRANDS << b
   end
+    BRANDS << brand
   end
+ 
   
   def cobble
     self.condition = "new"
