@@ -12,7 +12,7 @@ class Shoe
     @brand = brand
 
     brand.uniq { |b| b.uniq }
-    BRANDS.include?
+    BRANDS.include?(b)
   end
   
   def cobble
