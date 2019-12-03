@@ -8,6 +8,7 @@ class Shoe
     brand.each do |b|
     !BRANDS.include?(b)
     BRANDS << b
+    end
   end
   
  
