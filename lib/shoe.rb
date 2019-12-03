@@ -12,7 +12,7 @@ class Shoe
     @brand = brand
 
     brand.uniq { |b| b.uniq }
- 
+      delete_if
     BRANDS << b
   end
   
