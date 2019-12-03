@@ -11,7 +11,7 @@ class Shoe
   def unique_b=(brand)
     @brand = brand
 
-    brand.each do |b| b.uniq
+    brand.each do |b|
     !BRANDS.include?(b)
     BRANDS << b
   end
