@@ -5,12 +5,11 @@ class Shoe
   BRANDS = []
   def initialize(brand)
     @brand = brand
-    brand.map do |b|
+    brand.each do |b|
     !BRANDS.include?(b)
     BRANDS << b
   end
-    BRANDS << brand
-  end
+  
  
   
   def cobble
